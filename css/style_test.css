@@ -1,0 +1,67 @@
+@import url("reset.css");
+
+/* === 1 ==== */
+/* Чтобы футер был снизу вне зависимости от наполнения страницы - принимаем высоту страницы за 100%, заворачиваем во врапер весь контент (хирер, мэин и футер),
+задаем враперу ту же высоту что и бади, т.е. 100%, дисплей флекс с вертикальным направление (колонка), задаем футеру внешний отступ (маржин) от топа авто */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer {
+    margin-top: auto;
+}
+/* === 1 end ==== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.header_in {
+    background: #f0618c;
+    padding: 30px;
+}
+
+.main_in {
+    background: #51f08e;
+    padding: 30px;
+}
+
+.footer_in {
+    background: #2196F3;
+    padding: 30px;
+}
+
+.menu {
+    background-color: aqua;
+    width: 800px;
+    display: flex;
+    justify-content: center; /*выравнивает контент по горизонтали*/
+    align-items: center; /*выравнивает контент по вертикали*/
+    height: 50px;
+    margin: auto; /*выравнивает блок по центра парента горизонтально и вертикально*/
+    gap: 30px; /*устанавливается только на родителя */
+}
+
+.menu-tab {
+    background: black;
+    color: aliceblue;
+    outline: 2px solid #2196F3;
+    /* flex-basis: 200px; задает ширину каждому айтему флекса */
+    /* max-width: 50px; каждый айтем влекса не будет иметь ширину более указаной */
+    /* flex-grow: 1; растягивает элементы на всю доступную ширину родителя, ширина айтема завидит от величины его наполнения */
+    /* flex-shrink: 1; запрещает элементу уменьшшаться */
+    /* flex: 1 1 20%; flex-grow/flex-shrink/flex-basis */
+}
+
